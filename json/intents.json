@@ -1,0 +1,64 @@
+{
+    "intents": [
+        {
+            "tag": "greetings",
+            "patterns": ["hi", "hello", "hey", "greetings"],
+            "responses": ["Hi, how can I assist you today?", "Hello! What's on your mind?", "Hey there, how can I help?"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["bye", "goodbye", "exit", "quit"],
+            "responses": ["Goodbye!", "See you later!", "Take care!"]
+        },
+        {
+            "tag": "happy",
+            "patterns": ["happy", "glad", "great", "well done", "good job"],
+            "responses": ["Glad to hear that!", "That's wonderful!", "Keep up the positivity!"]
+        },
+        {
+            "tag": "name",
+            "patterns": ["my name is (\\w+)", "call me (\\w+)", "^(\\w+)$"],
+            "responses": ["Nice to meet you, {name}! How can I assist you today?"]
+        },
+        {
+            "tag": "color",
+            "patterns": ["my favorite color is (\\w+)", "i like (\\w+)"],
+            "responses": ["Ah, {color} is a lovely color! Why do you like it?"] 
+        },
+        {
+            "tag": "who_and_what",
+            "patterns": ["who are you", "what do you"],
+            "responses": ["I'm just a computer program, but I'm here to help you!", "I am a simple chatbot created to assist you."]
+        },
+        {
+            "tag": "weather",
+            "patterns": ["weather", "temperature", "forecast"],
+            "responses": ["Look Outside!", "Open your window...", "You can check the weather on your phone or computer."]
+        },
+        {
+            "tag": "cafe",
+            "patterns": ["cafe"],
+            "responses": ["There are 2 cafes - in RHB and PSH."]
+        },
+        {
+            "tag": "thank_you",
+            "patterns": ["thank you", "thanks"],
+            "responses": ["You're welcome! Is there anything else I can help you with?"]
+        },
+        {
+            "tag": "help",
+            "patterns": ["help"],
+            "responses": ["Here are some things you can ask me: "]
+        },
+        {
+            "tag": "food",
+            "patterns": ["food", "canteen", "cafeteria"],
+            "responses": ["I like curry rice! What's your favorite food?"]
+        },
+        {
+            "tag": "default",
+            "patterns": [],
+            "responses": ["Sorry, I didn't get that. Could you try again?", "I'm afraid I didn't understand that."]
+        }
+    ]
+}
